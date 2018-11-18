@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Curso de CSS3 Avancado</title>
+        <style>
+            body {
+                margin:0;   
+            }
+        
+            div#janela {
+                width: 80%;
+                height: 400px;
+                margin: 100px auto;
+                border: 1px solid #000;
+            }
+            
+            div#janela img {
+                width: 100%;
+                height: 100%;
+                
+                /*object fit*/ 
+                
+                /* Mantém a imagem no tamanho original */
+                /* object-fit: none; */ 
+                
+                /* Preenche o container (distorce a imagem) */
+                /* object-fit: fill; */
+                
+                /* Redimensiona a imagem proporcionalmente à altura ou largura (menor medida)(mostra toda a imagem) */
+                /* object-fit: contain; */
+                
+                /* Redimensiona a imagem de acordo com a largura, porém sem distorcê-la */
+                /* object-fit: cover; */
+                
+                /* Semelhante ao contain, porém o tamanho máximo é o tamanho original da imagem */
+                object-fit: scale-down;
+                
+                object-position: center center;
+            }        
+        </style>
+    </head>
+    <body>
+        <div id="janela">
+            <img src="_img/mulher-computador-600x314.jpg">
+        </div>
+    </body>
+</html>
