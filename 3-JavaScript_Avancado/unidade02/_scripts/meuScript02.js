@@ -12,3 +12,6 @@ novaPizza.innerHTML = "Quatro Queijos"
 meuElemento.appendChild(document.createElement("li")).innerHTML = "Margueritta"
 meuElemento.appendChild(document.createElement("li")).innerHTML = "Brócolis"
 meuElemento.appendChild(document.createElement("li")).innerHTML = "Camarão com Catupiry"
+
+// *** OPÇÃO 3 ***
+document.querySelector("#opcoesPizza").appendChild(document.createElement("li")).innerHTML = "Baiana"
