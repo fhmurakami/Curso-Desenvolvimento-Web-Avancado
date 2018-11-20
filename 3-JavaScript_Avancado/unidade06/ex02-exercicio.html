@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Javascript Avançado</title>
-        <meta charset="utf-8" />
-        <style>
-            div {
-                display: block;
-            }
-        </style>
-    </head>	
-    <body>
-        <div id="posicaoX"></div>
-        <div id="posicaoY"></div>
-        <script src="_scripts/script2.js"></script>
-    </body>
+
+<head>
+    <title>Javascript Avançado</title>
+    <meta charset="utf-8" />
+    <style>
+        div#posicaoX,
+        div#posicaoY {
+            display: block;
+        }
+
+        div#janela {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 255, 0.5)
+        }
+    </style>
+</head>
+
+<body>
+    <div id="posicaoX"></div>
+    <div id="posicaoY"></div>
+
+    <div id="janela"></div>
+    <script src="_scripts/script2.js"></script>
+</body>
+
 </html>
