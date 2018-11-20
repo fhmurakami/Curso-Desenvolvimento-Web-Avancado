@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Pizzaria Javascript</title>
+    </head>
+
+	<body>
+		<h1>Menu Pizzas</h1>
+		<ul id="opcoesPizza">
+			<li>Calabresa</li>
+			<li>Portuguesa</li>
+			<li>Mussarela</li>
+		</ul> 
+        
+		<img src="_img/pizza.jpg"> 
+		
+		<script>
+			var imagem = document.querySelector("img")
+			imagem.setAttribute("src","_img/pizza2.jpg")
+			imagem.setAttribute("width", "300px")
+			imagem.setAttribute("alt", "Foto da pizza")
+
+			console.log(imagem.getAttribute("alt"))
+		</script>
+	</body>
+</html>
