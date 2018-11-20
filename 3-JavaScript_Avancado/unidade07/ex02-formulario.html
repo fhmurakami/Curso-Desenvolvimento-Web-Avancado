@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Javascript Avancado</title>
+        <link href="_css/estilos2.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <main>
+            <div id="janela">
+                <h1>Inscreva-se abaixo</h1>
+
+                <form id="formViagem" method="post" action="destino.html">
+                    <input type="text"  id="nome"       name="nome"     placeholder="Nome Completo" />
+                    <input type="text"  id="telefone"   name="telefone" placeholder="Telefone"      />
+                    <input type="email" id="email"      name="email"    placeholder="Email"         />    
+
+                    <span style="display:block;margin-bottom:20px">
+                        <input type="checkbox" name="escolhercidade" id="escolhercidade" value="escolher" />
+                        <label for="escolhercidade" class="labelCheckBox">Escolher a cidade que deseja conhecer.</label>
+                    </span>
+
+                    <div id="cidade">
+                        <input type="checkbox" name="Frankfurt" id="Frankfurt" value="1" />
+                        <label for="Frankfurt" class="labelCheckBox">Frankfurt</label>
+
+                        <input type="checkbox" name="Berlin" id="Berlin" value="2" />
+                        <label for="Berlin" class="labelCheckBox">Berlin</label>
+
+                        <input type="checkbox" name="Munique" id="Munique" value="3" />
+                        <label for="Munique" class="labelCheckBox">Munique</label>  
+
+                        <input type="checkbox" name="Colonia" id="Colonia" value="4" />
+                        <label for="Colonia" class="labelCheckBox">Colonia</label>     
+
+                        <input type="checkbox" name="Fussen" id="Fussen" value="5" />
+                        <label for="Fussen" class="labelCheckBox">Fussen</label>  
+
+                        <input type="checkbox" name="Stuttgart" id="Stuttgart" value="6" />
+                        <label for="Stuttgart">Stuttgart</label>                                                                                
+                    </div>                          
+                    <input type="submit" value="Enviar" class="botaoSubmit" />
+                </form>
+            </div>
+        </main>
+        <script src="_scripts/script2.js"></script>    
+    </body>
+</html>

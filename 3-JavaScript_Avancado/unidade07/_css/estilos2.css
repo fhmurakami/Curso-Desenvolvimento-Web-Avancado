@@ -1,0 +1,57 @@
+body {
+    background-color: #EEEEEE;
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+}
+
+main {
+    width:900px;
+    margin:0 auto;
+    background-color:#FFFFFF;
+    margin-bottom:30px;
+    box-shadow: 0 0 4px #999;
+}
+
+#janela {
+    width:870px;
+    padding:15px;	
+}
+
+#mensagem {
+    width:500px;
+    margin-left:15px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color:#F00;	
+}
+
+h1 {
+    color:#666666;
+    font-family:Georgia, "Times New Roman", Times, serif;
+    font-style:italic;
+}
+
+.labelCheckBox {
+    margin-right:20px;
+}
+
+input[type=text],input[type=email] {
+    padding:10px;
+    border:1px solid #999;
+    border-radius:5px;
+    width:200px;
+    background-color:#FFFFFF;
+    margin-bottom:20px;
+    display: block;
+}
+
+input[type=submit] {
+    display:block;	
+}
+
+#cidade {
+    display:block;
+    width:260px;
+    margin-bottom:20px;
+}
