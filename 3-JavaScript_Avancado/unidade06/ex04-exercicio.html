@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Avançado</title>
+
+    <style>
+        body {
+            height: 2000px;
+        }
+
+        div#posicaoY {
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="posicaoY"></div>
+    <script>
+        window.addEventListener('scroll', function () {
+            posicaoY.innerHTML = window.scrollY
+        })
+    </script>
+</body>
+
+</html>
