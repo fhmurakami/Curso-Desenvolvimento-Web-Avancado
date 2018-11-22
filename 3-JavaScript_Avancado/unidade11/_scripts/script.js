@@ -23,11 +23,11 @@ window.onload = function() {
                 if (ajax.readyState == 4) {
                     if( ajax.status == 200 ) {
                         resultado = JSON.parse(ajax.responseText)
-                        console.log(resultado)
-                        console.log(resultado.main.temp_min)
-                        console.log(resultado.main.temp_max)
-                        console.log(resultado.name)
-                        console.log(resultado.weather[0].description)
+                        nome_cidade.innerHTML = resultado.name
+                        
+                        temp_min.innerHTML = resultado.main.temp_min
+                        temp_max.innerHTML = resultado.main.temp_max
+                        descricao.innerHTML = resultado.weather[0].description
                     }
                 }
             }
