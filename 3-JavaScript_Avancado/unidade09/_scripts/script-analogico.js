@@ -6,8 +6,8 @@ function mostrarHora() {
     var min = agora.getMinutes()
     var seg = agora.getSeconds()
 
-    var ponteiroHora = hr * 30
-    var ponteiroMin = min * 6
+    var ponteiroHora = hr * 30 + min / 2
+    var ponteiroMin = min * 6 + seg / 10
     var ponteiroSeg = seg * 6
 
     hora.style.transform = `rotate(${ponteiroHora}deg)`
