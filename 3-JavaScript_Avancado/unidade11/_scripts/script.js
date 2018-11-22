@@ -22,7 +22,12 @@ window.onload = function() {
             ajax.onreadystatechange = function() { 
                 if (ajax.readyState == 4) {
                     if( ajax.status == 200 ) {
-                        console.log(ajax.responseText)
+                        resultado = JSON.parse(ajax.responseText)
+                        console.log(resultado)
+                        console.log(resultado.main.temp_min)
+                        console.log(resultado.main.temp_max)
+                        console.log(resultado.name)
+                        console.log(resultado.weather[0].description)
                     }
                 }
             }
